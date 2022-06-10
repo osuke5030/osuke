@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Footer } from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import { Links } from "../components/Links";
+import { Headline } from "../components/Headline";
 
 const About = () => {
   return (
@@ -13,12 +14,7 @@ const About = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>About Pages</h1>
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/about.js</code>
-        </p>
-
+        <Headline page="about" />
         <Links />
       </main>
 
